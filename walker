@@ -11,7 +11,7 @@ echo "Walker started. Will remind you to walk every ${WORK_MINS} minutes."
 echo "Press Ctrl+C to stop."
 
 while true; do
-    sleep $((WORK_MINS * 60))
     notify "Time to walk! Get up and move for 5 minutes."
     say "Time to walk"
+    sleep $((WORK_MINS * 60))
 done
