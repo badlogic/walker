@@ -2,7 +2,6 @@
 # walker - reminds you to walk every 45 minutes
 
 WORK_MINS=45
-WALK_MINS=5
 
 notify() {
     osascript -e "display notification \"$1\" with title \"Walker\" sound name \"Glass\""
@@ -13,9 +12,6 @@ echo "Press Ctrl+C to stop."
 
 while true; do
     sleep $((WORK_MINS * 60))
-    notify "Time to walk! Get up and move for ${WALK_MINS} minutes."
+    notify "Time to walk! Get up and move for 5 minutes."
     say "Time to walk"
-    sleep $((WALK_MINS * 60))
-    notify "Walk complete. Back to work!"
-    say "Walk complete"
 done
