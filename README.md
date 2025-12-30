@@ -1,22 +1,18 @@
 # Walker
 
-Minimal macOS reminder to walk for 5 minutes every 45 minutes.
+Minimal macOS reminder to walk every 60 minutes.
 
 ## Usage
 
 ```bash
-./walker
+./walker          # start in background
+./walker stop     # stop
+./walker status   # check status
 ```
-
-Runs in foreground. Shows notifications and speaks when it's time to walk/return.
 
 ## Install
 
 ```bash
 chmod +x walker
-```
-
-To run in background:
-```bash
-nohup ./walker &
+cp walker /usr/local/bin/
 ```
